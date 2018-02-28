@@ -1,0 +1,25 @@
+<div class="split-lists">
+
+  {{ range $key, $value := .Site.Params.links }}
+    {{ range $key, $list := $value }}
+    
+    {{ if $list.link }}
+      <div class="split-list">
+        <h3>{{ $list.heading }}</h3>
+        <ul>
+          {{ range $list.link }}
+            <li><a href="{{ .url }}">{{ .text }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+
+    {{ end }}
+  {{ end }}
+
+</div>
+<div class="social-links">
+  <a href="http://github.com/Tunsy"><div class="icon social"><i class="fab fa-github-alt"></i></div></a>
+  <a href="http://linkedin.com/in/jonthnngyn"><div class="icon social"><i class="fab fa-linkedin-in"></i></div></a>
+  <a href="mailto:jonthnngyn@gmail.com"><div class="icon social"><i class="fas fa-envelope "></i></div></a>
+</div>

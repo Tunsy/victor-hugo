@@ -1,0 +1,415 @@
+//-------------------------------------------------------------------------------
+// Google Font Import
+//-------------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+
+//-------------------------------------------------------------------------------
+// Variables
+//-------------------------------------------------------------------------------
+
+// Colors
+$color-background 	: rgb(3, 12, 24);
+$color-text			: #e7f0f8;
+$color-link			: #e7f0f8;
+$color-link-hover	: #2ab6ee; 
+$color-maverick		: #e7f0f8; 
+$color-tagline		: #e7f0f8; 
+
+// Breakpoints
+$bp-smallish 		: 1200px;
+$bp-tablet 			: 800px;
+$bp-mobile 			: 500px;
+
+// Images
+$image-background	: url('../../images/background.jpg');
+
+//-------------------------------------------------------------------------------
+// Fade In
+//-------------------------------------------------------------------------------
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}
+
+//-------------------------------------------------------------------------------
+// Content
+//-------------------------------------------------------------------------------
+
+html {
+	background-color: $color-background; 
+}
+body.page-template-page-fullsingle-split {
+	background-color: $color-background; 
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 33px;
+	letter-spacing: -0.2px;
+	color: $color-text;
+	// animation: fadein 1.3s;
+
+	//-------------------------------------------------------------------------------
+	// Global Styles
+	//-------------------------------------------------------------------------------
+
+	p {
+		color: $color-text;
+	}
+
+}
+
+//-------------------------------------------------------------------------------
+// Sections and Columns
+//-------------------------------------------------------------------------------
+
+.fs-split {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+
+	@media (max-width: $bp-tablet ) {
+		height: auto;
+		flex-wrap: wrap;
+	}	
+
+	//-------------------------------------------------------------------------------
+	// Column - Big Image
+	//-------------------------------------------------------------------------------
+
+	.split-image {
+		width: 50%;
+		height: 100vh;
+		background-image: $image-background; 
+		background-position:center center;
+		opacity:0;
+		background-size:cover;
+		-webkit-animation: fadein 1.3s;
+		animation: fadein 1.3s forwards; 
+
+		@media (max-width: $bp-tablet ) {
+			height: 80vh;
+			width: 100%;
+		}	
+
+	}
+
+	//-------------------------------------------------------------------------------
+	// Column - Content 
+	//-------------------------------------------------------------------------------
+
+	.split-content {
+		width: 50%;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+  		justify-content: center;
+  		overflow: auto;
+
+		@media (max-width: $bp-tablet ) {
+			width: 100%;
+			height: auto;
+		}	
+
+		.split-content-vertically-center {
+			padding: 80px;
+			max-width: 640px;
+			margin-top: auto;
+  			margin-bottom: auto;
+
+			@media (max-width: $bp-smallish ) {
+				padding: 60px;
+			}
+
+			@media (max-width: $bp-tablet ) {
+				padding: 40px;
+			}	
+			
+		}
+
+	}
+
+}
+
+//-------------------------------------------------------------------------------
+// Content
+//-------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------
+// Intro Text
+//-------------------------------------------------------------------------------
+
+.split-intro {
+	font-weight: 600;
+	font-size: 24px; 
+	line-height: 30px;
+	opacity: 0;	
+	-webkit-animation: fadein 1.3s;
+	animation: fadein 1.3s forwards; 
+	animation-delay: .3s;
+
+
+	h1 {
+		font-weight: bold;
+		font-size: 36px; 
+		line-height: 40px;
+		margin-bottom: 5px;
+		letter-spacing: 0.4px;
+		color: $color-maverick;
+	}
+
+	.tagline {
+		color: $color-tagline;
+		letter-spacing: 1px;
+	}
+
+}
+
+//-------------------------------------------------------------------------------
+// Biography
+//-------------------------------------------------------------------------------
+
+.split-bio {
+	padding: 20px 0 40px 0;
+	font-family: 'Open Sans', serif;
+	-webkit-animation: fadein 1.3s;
+	opacity: 0;
+	animation: fadein 1.3s forwards;
+	animation-delay: .6s;
+
+	@media (max-width: $bp-smallish ) {
+		padding: 30px 0;
+	}
+
+	@media (max-width: $bp-tablet ) {
+		padding: 20px 0;
+	}	
+
+	p {
+		color: $color-text;
+	}
+
+	a:not([class]) {
+		background-image: linear-gradient($color-link-hover 50%, $color-link-hover 50%);
+		background-size: 10000px 1px;
+		color: $color-link-hover;
+		background-repeat: no-repeat;
+		background-position: 0 1em;
+		background-position: -10000px 1em;
+		font-weight: bold;
+		&:hover {
+		  background-position: 0 1em;
+		  transition: background-position 2s ease-in-out;
+		}
+	}		
+}
+
+.underline--magical {
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+	background-position: 0% 100%;
+
+	animation: color-me-in 1s forwards;
+	animation-delay: 2.2s;
+  }
+
+  @keyframes color-me-in {
+	0% {
+		background-size: 0% 100%;
+	}
+	100% {
+		background-size: 100% 100%;
+	}
+  }
+
+//-------------------------------------------------------------------------------
+// Lists
+//-------------------------------------------------------------------------------
+
+.split-lists {	
+
+	.split-list {
+		width: 30%;
+		display: inline-block;
+		margin-bottom: 40px;
+		vertical-align: top;
+		opacity: 0;
+
+		@media (max-width: $bp-mobile ) {
+			width: 90%;
+		}	
+
+		h3 {
+			font-weight: 400;
+			text-transform: uppercase;
+			font-size: 11px;
+			line-height: 11px;
+			margin-bottom: 20px;
+			color: $color-text;
+			letter-spacing: 2px;
+			opacity: 0.5;
+		}
+
+		ul {
+			
+
+			li {
+				font-size: 16px;
+				line-height: 16px;	
+				margin-bottom: 12px;
+				
+				a {
+					color: $color-link;
+					transition-duration: 0.5s;
+
+					&:hover {
+						color: $color-link-hover;
+						transition-duration: 0.1s;
+					}
+
+				}
+				
+			}
+
+		}
+	}
+	.split-list:nth-child(1){
+		animation: fadein 1.3s forwards; 
+		animation-delay: 1s;
+		}
+
+	.split-list:nth-child(2){
+		animation: fadein 1.3s forwards; 
+		animation-delay: 1.15s;
+		}
+
+	.split-list:nth-child(3){
+		animation: fadein 1.3s forwards; 
+		animation-delay: 1.30s;
+	}
+}
+
+.social-links{
+	text-align: center;	
+	align-items: center;
+	justify-content: center;
+
+	.social{
+		border:1px solid  $color-text;
+		border-radius: 30px;
+		color: $color-text;
+		height: 40px;
+		width: 40px;
+		font-size: 25px;
+		text-align: center;
+		line-height: 40px;
+		display:inline-block;
+		vertical-align: bottom;
+		margin: 0px 10px 0px 10px;
+		opacity: 0;		
+		transition-duration: 0.5s;	
+
+		&:hover {
+			color: $color-link-hover;
+			border-color: $color-link-hover;
+			transition-duration: 0.1s;			
+		}
+	}
+
+	.social:nth-child(1){
+		animation: fadein 1.3s forwards; 
+		animation-delay: 1.6s;
+	}
+
+	.social:nth-child(2){
+		animation: fadein 1.3s forwards; 
+		animation-delay: 1.75s;
+		}
+
+	.social:nth-child(3){
+		animation: fadein 1.3s forwards; 
+		animation-delay: 1.90s;
+	}
+}
+
+
+
+
+  
+
+//-------------------------------------------------------------------------------
+// Credit
+//-------------------------------------------------------------------------------
+
+//	To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split 
+//	this really helps contribute towards us developing more templates and means the world to me!
+//	Cheers, Rob (@robhope)
+
+.split-credit {
+	opacity: 0.4;
+
+	p {
+		font-size: 12px; 
+		line-height: 14px;
+
+		a { 
+			color: $color-text;
+		}
+
+	}
+
+}
+
+//-------------------------------------------------------------------------------
+// Videos - shout out to my bud https://twitter.com/manuelmoreale for the Ninja skills
+//-------------------------------------------------------------------------------
+
+// YouTube
+
+.split-video {
+	overflow:hidden;
+	position:relative;
+}
+.video-wrap{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.video-container {
+	position:relative;
+	overflow:hidden;
+	height: 56.25vw; 
+	width: 100vw;
+	@media (max-aspect-ratio:16/9) { 
+		height: 100vh; 
+		width: 177.7777777778vh; // this is for the ration 16:9
+	}
+}
+.video-container iframe, 
+.video-container object, 
+.video-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+// Self-Hosted
+
+video.video {
+	object-fit      : cover;
+	object-position : 50% 50%;
+	width           : 100%;
+	height          : 100%;
+} 
