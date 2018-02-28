@@ -25,8 +25,8 @@ googleAnalytics = ""
   # Section - Content
   [params.content]
     name = "Jonathan Nguyen"
-    tagline = "Software Engineer"
-    bio = "Hi! I'm a student studying computer science at [University of California, Irvine](#). I enjoy developing applications and solving problems. Take a look at my [resume](#) or some of the cool stuff I've made!"
+    tagline = "Software Developer"
+    bio = "Hi! I'm a student studying computer science at [University of California, Irvine](//uci.edu/). I enjoy developing applications and solving problems. Take a look at my [resume](jonathanNguyenSoftwareResume4.pdf) or some of the cool stuff I've worked on!"
 
   # Section - Visual
   [params.visual]
@@ -34,7 +34,7 @@ googleAnalytics = ""
     # Image
     [params.visual.image]
       enable = true
-      file = "images/background-edit.jpg"
+      file = "images/background-edit-color.jpg"
       position = "center center"
 
     # Video
@@ -65,7 +65,7 @@ googleAnalytics = ""
 
       [[params.links.list1.link]]
         text = "More >"
-        url = "#"
+        url = "//www.github.com/Tunsy"
 
   # Links List #2
   [[params.links]]
