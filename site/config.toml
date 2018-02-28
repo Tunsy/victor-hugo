@@ -1,9 +1,107 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "My new Victor-Hugo site"
+# Site settings
+baseURL = "https://example.org/"
+languageCode = "en-US"
+title = "Split - HTML Template Demo"
+theme = "hugo-split-theme"
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+
+  # Metadata for search engines and social sharing
+  name = "Jonathan Nguyen"
+  description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
+  shareImage = "images/social.jpg"
+  twitterHandle = "onepagelove"
+
+  # Favicon
+  favicon = "favicon.ico"
+
+  # Copyright
+  copyright = "&copy;2017 Jonathan Nguyen"
+
+  # Section - Content
+  [params.content]
+    name = "Jonathan Nguyen"
+    tagline = "Software Engineer"
+    bio = "Hi! I'm a student studying computer science at [University of California, Irvine](#). I enjoy developing applications and solving problems. Take a look at my [resume](#) or some of the cool stuff I've made!"
+
+  # Section - Visual
+  [params.visual]
+
+    # Image
+    [params.visual.image]
+      enable = true
+      file = "images/background-edit.jpg"
+      position = "center center"
+
+    # Video
+    [params.visual.video]
+      enable = false
+      mute = true
+      file = "videos/background.mp4"
+      # youtubeId = "dk9uNWPP7EA"
+
+  # Links
+  #
+  # Links List #1
+  [[params.links]]
+    [params.links.list1]
+      heading = "Projects"
+
+      [[params.links.list1.link]]
+        text = "Instanurse"
+        url = "#"
+
+      [[params.links.list1.link]]
+        text = "VRoom"
+        url = "#"
+
+      [[params.links.list1.link]]
+        text = "YOLOBOLO"
+        url = "#"
+
+      [[params.links.list1.link]]
+        text = "More >"
+        url = "#"
+
+  # Links List #2
+  [[params.links]]
+    [params.links.list2]
+      heading = "Leadership"
+
+      [[params.links.list2.link]]
+        text = "VGDC"
+        url = "#"
+
+      [[params.links.list2.link]]
+        text = "FIRST Robotics"
+        url = "#"
+
+      [[params.links.list2.link]]
+        text = "Developers' Guild"
+        url = "#"
+
+  # Links List #3
+  [[params.links]]
+    [params.links.list3]
+      heading = "Experience"
+
+      [[params.links.list3.link]]
+        text = "Kelley Blue Book"
+        url = "#"
+
+      [[params.links.list3.link]]
+        text = "Tunsy"
+        url = "#"
+
+      [[params.links.list3.link]]
+        text = "Student Success Center"
+        url = "#"
+
+  # The original template is released under the Creative Commons Attribution 3.0 License.
+  # Please keep the original attribution link when using for your own project.
+  # If you'd like to use the template without the attribution, you can check out
+  # the license option via the template author's website: https://onepagelove.com/split

@@ -1,9 +1,48 @@
-{{ partial "header" . }}
+<!DOCTYPE html>
+<html lang="en-US">
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
+<head>
+  {{ partial "head" . }}
+</head>
 
-<p>
-  Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
-</p>
+<body id="fullsingle" class="page-template-page-fullsingle-split">
 
-{{ partial "footer" . }}
+  <div class="fs-split">
+
+    <!-- Image -->
+    {{ if .Site.Params.visual.image.enable }}
+    
+      <div class="split-image">
+
+      </div>
+
+    <!-- Video -->
+    {{ else if .Site.Params.visual.video.enable }}
+
+      {{ partial "video" . }}
+
+    {{ end }}
+
+    <!-- Content Side -->
+    <div class="split-content">
+      <div class="split-content-vertically-center">
+
+        <!-- Intro -->
+        {{ partial "intro" . }}
+
+        <!-- Bio -->
+        {{ partial "bio" . }}
+
+        <!-- Links -->
+        {{ partial "links" . }}
+
+        <!-- Footer -->
+        {{ partial "footer" . }}
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
