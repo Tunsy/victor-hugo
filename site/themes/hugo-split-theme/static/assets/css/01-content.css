@@ -46,33 +46,33 @@ body.page-template-page-fullsingle-split {
       .fs-split .split-image {
         height: 80vh;
         width: 100%; } }
+  .fs-split .split-image-mobile {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/background.jpg");
+    background-position: center center;
+    opacity: 0;
+    background-size: cover;
+    -webkit-animation: fadein 1.3s;
+    animation: fadein 1.3s forwards;
+    animation-delay: 1s;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative; }
   @media screen and (device-width: 360px) and (device-height: 640px) {
     .fs-split .split-image {
-      height: 100vh;
-      width: 100%;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      position: relative; } }
+      display: none;
+      opacity: 0; } }
   @media only screen and (max-device-width: 640px) {
     .fs-split .split-image {
-      height: 100vh;
-      width: 100%;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      position: relative; } }
+      display: none;
+      opacity: 0; } }
   @media only screen and (max-device-width: 768px) {
     .fs-split .split-image {
-      height: 100vh;
-      width: 100%;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      position: relative; } }
+      display: none;
+      opacity: 0; } }
   .fs-split .split-content {
     width: 50%;
     min-height: 100vh;
@@ -156,46 +156,45 @@ body.page-template-page-fullsingle-split {
   100% {
     background-size: 100% 100%; } }
 
-.split-lists .split-list {
-  width: 30%;
-  display: inline-block;
-  margin-bottom: 40px;
-  vertical-align: top;
-  opacity: 0; }
-  @media (max-width: 500px) {
-    .split-lists .split-list {
-      width: 90%; } }
-  .split-lists .split-list h3 {
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 11px;
-    line-height: 11px;
-    margin-bottom: 20px;
-    color: #b6c1c9;
-    letter-spacing: 2px;
-    opacity: 0.5; }
-  .split-lists .split-list ul li {
-    font-size: 16px;
-    line-height: 16px;
-    margin-bottom: 12px; }
-    .split-lists .split-list ul li a {
+.split-lists {
+  margin-top: 15px; }
+  .split-lists .split-list {
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 40px;
+    vertical-align: top;
+    opacity: 0; }
+    @media (max-width: 500px) {
+      .split-lists .split-list {
+        width: 90%; } }
+    .split-lists .split-list h3 {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 11px;
+      line-height: 11px;
+      margin-bottom: 20px;
       color: #b6c1c9;
-      transition-duration: 0.5s; }
-      .split-lists .split-list ul li a:hover {
-        color: #5d37b6;
-        transition-duration: 0.1s; }
-
-.split-lists .split-list:nth-child(1) {
-  animation: fadein 1.3s forwards;
-  animation-delay: 1.75s; }
-
-.split-lists .split-list:nth-child(2) {
-  animation: fadein 1.3s forwards;
-  animation-delay: 1.90s; }
-
-.split-lists .split-list:nth-child(3) {
-  animation: fadein 1.3s forwards;
-  animation-delay: 2.05s; }
+      letter-spacing: 2px;
+      opacity: 0.5; }
+    .split-lists .split-list ul li {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 12px; }
+      .split-lists .split-list ul li a {
+        color: #b6c1c9;
+        transition-duration: 0.5s; }
+        .split-lists .split-list ul li a:hover {
+          color: #5d37b6;
+          transition-duration: 0.1s; }
+  .split-lists .split-list:nth-child(1) {
+    animation: fadein 1.3s forwards;
+    animation-delay: 1.75s; }
+  .split-lists .split-list:nth-child(2) {
+    animation: fadein 1.3s forwards;
+    animation-delay: 1.90s; }
+  .split-lists .split-list:nth-child(3) {
+    animation: fadein 1.3s forwards;
+    animation-delay: 2.05s; }
 
 .social-links {
   text-align: center;
