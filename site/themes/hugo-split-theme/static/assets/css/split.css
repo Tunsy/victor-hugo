@@ -107,9 +107,9 @@ body.page-template-page-fullsingle-split {
   font-size: 21px;
   line-height: 33px;
   letter-spacing: -0.2px;
-  color: #e7f0f8; }
+  color: #b6c1c9; }
   body.page-template-page-fullsingle-split p {
-    color: #e7f0f8; }
+    color: #b6c1c9; }
 
 .fs-split {
   width: 100vw;
@@ -165,7 +165,7 @@ body.page-template-page-fullsingle-split {
   animation-delay: .3s; }
   .split-intro h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 40px;
     margin-bottom: 5px;
     letter-spacing: 0.4px;
@@ -188,11 +188,11 @@ body.page-template-page-fullsingle-split {
     .split-bio {
       padding: 20px 0; } }
   .split-bio p {
-    color: #e7f0f8; }
+    color: #b6c1c9; }
   .split-bio a:not([class]) {
-    background-image: linear-gradient(#2ab6ee 50%, #2ab6ee 50%);
+    background-image: linear-gradient(#5d37b6 50%, #5d37b6 50%);
     background-size: 10000px 1px;
-    color: #2ab6ee;
+    color: #5d37b6;
     background-repeat: no-repeat;
     background-position: 0 1em;
     background-position: -10000px 1em;
@@ -230,7 +230,7 @@ body.page-template-page-fullsingle-split {
     font-size: 11px;
     line-height: 11px;
     margin-bottom: 20px;
-    color: #e7f0f8;
+    color: #b6c1c9;
     letter-spacing: 2px;
     opacity: 0.5; }
   .split-lists .split-list ul li {
@@ -238,10 +238,10 @@ body.page-template-page-fullsingle-split {
     line-height: 16px;
     margin-bottom: 12px; }
     .split-lists .split-list ul li a {
-      color: #e7f0f8;
+      color: #b6c1c9;
       transition-duration: 0.5s; }
       .split-lists .split-list ul li a:hover {
-        color: #2ab6ee;
+        color: #5d37b6;
         transition-duration: 0.1s; }
 
 .split-lists .split-list:nth-child(1) {
@@ -261,9 +261,9 @@ body.page-template-page-fullsingle-split {
   align-items: center;
   justify-content: center; }
   .social-links .social {
-    border: 1px solid #e7f0f8;
+    border: 1px solid #b6c1c9;
     border-radius: 30px;
-    color: #e7f0f8;
+    color: #b6c1c9;
     height: 40px;
     width: 40px;
     font-size: 25px;
@@ -275,8 +275,8 @@ body.page-template-page-fullsingle-split {
     opacity: 0;
     transition-duration: 0.5s; }
     .social-links .social:hover {
-      color: #2ab6ee;
-      border-color: #2ab6ee;
+      color: #5d37b6;
+      border-color: #5d37b6;
       transition-duration: 0.1s; }
   .social-links .social:nth-child(1) {
     animation: fadein 1.3s forwards;
@@ -294,7 +294,7 @@ body.page-template-page-fullsingle-split {
     font-size: 12px;
     line-height: 14px; }
     .split-credit p a {
-      color: #e7f0f8; }
+      color: #b6c1c9; }
 
 .split-video {
   overflow: hidden;

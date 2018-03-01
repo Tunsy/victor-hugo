@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "https://example.org/"
 languageCode = "en-US"
-title = "Split - HTML Template Demo"
+title = "Jonathan Nguyen"
 theme = "hugo-split-theme"
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
@@ -12,9 +12,9 @@ googleAnalytics = ""
 
   # Metadata for search engines and social sharing
   name = "Jonathan Nguyen"
-  description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
-  shareImage = "images/social.jpg"
-  twitterHandle = "onepagelove"
+  description = "My portfolio website."
+  shareImage = "images/background-edit-gradient.jpg"
+  twitterHandle = ""
 
   # Favicon
   favicon = "favicon.ico"
@@ -25,8 +25,8 @@ googleAnalytics = ""
   # Section - Content
   [params.content]
     name = "Jonathan Nguyen"
-    tagline = "Software Developer"
-    bio = "Hi! I'm a student studying computer science at [University of California, Irvine](//uci.edu/). I enjoy developing applications and solving problems. Take a look at my [resume](jonathanNguyenSoftwareResume4.pdf) or some of the cool stuff I've worked on!"
+    tagline = "Software Engineer"
+    bio = "Hi! I'm a student studying computer science at [University of California, Irvine](//uci.edu/). I enjoy developing applications and solving problems. Take a look at my [resume](jonathanNguyenSoftwareResume.pdf) or some of the cool stuff I've worked on!"
 
   # Section - Visual
   [params.visual]
@@ -34,7 +34,7 @@ googleAnalytics = ""
     # Image
     [params.visual.image]
       enable = true
-      file = "images/background-edit-color.jpg"
+      file = "images/background-edit-gradient-2-min.jpg"
       position = "center center"
 
     # Video
@@ -53,15 +53,15 @@ googleAnalytics = ""
 
       [[params.links.list1.link]]
         text = "Instanurse"
-        url = "#"
+        url = "//devpost.com/software/instanurse"
 
       [[params.links.list1.link]]
         text = "VRoom"
-        url = "#"
+        url = "//devpost.com/software/vroom-ofcbn0"
 
       [[params.links.list1.link]]
         text = "YOLOBOLO"
-        url = "#"
+        url = "//github.com/chriswongtv/bolo"
 
       [[params.links.list1.link]]
         text = "More >"
