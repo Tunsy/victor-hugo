@@ -93,15 +93,52 @@ body.page-template-page-fullsingle-split {
 		opacity:0;
 		background-size:cover;
 		-webkit-animation: fadein 1.3s;
-		animation: fadein 1.3s forwards; 
+		animation: fadein 1.3s forwards;
+		animation-delay: 1s;
 
 		@media (max-width: $bp-tablet ) {
 			height: 80vh;
 			width: 100%;
 		}	
-
 	}
 
+	@media screen 
+	and (device-width: 360px) 
+	and (device-height: 640px) {
+		.split-image {
+			height:100vh;
+			width: 100%;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			position: relative;
+		}
+	}
+	@media only screen and (max-device-width : 640px) {
+		.split-image {
+			height:100vh;
+			width: 100%;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			position: relative;
+		}
+	}
+		
+	@media only screen and (max-device-width: 768px) {
+		.split-image {
+			height:100vh;
+			width: 100%;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			position: relative;
+		}
+	}
+	
 	//-------------------------------------------------------------------------------
 	// Column - Content 
 	//-------------------------------------------------------------------------------
@@ -151,12 +188,10 @@ body.page-template-page-fullsingle-split {
 	font-weight: 600;
 	font-size: 24px; 
 	line-height: 30px;
-	opacity: 0;	
 	-webkit-animation: fadein 1.3s;
+	opacity: 0;		
 	animation: fadein 1.3s forwards; 
-	animation-delay: .3s;
-
-
+	animation-delay: 1.15s;
 	h1 {
 		font-weight: bold;
 		font-size: 40px; 
@@ -164,6 +199,7 @@ body.page-template-page-fullsingle-split {
 		margin-bottom: 5px;
 		letter-spacing: 0.4px;
 		color: $color-maverick;
+
 	}
 
 	.tagline {
@@ -183,7 +219,7 @@ body.page-template-page-fullsingle-split {
 	-webkit-animation: fadein 1.3s;
 	opacity: 0;
 	animation: fadein 1.3s forwards;
-	animation-delay: .6s;
+	animation-delay: 1.45s;
 
 	@media (max-width: $bp-smallish ) {
 		padding: 30px 0;
@@ -219,7 +255,7 @@ body.page-template-page-fullsingle-split {
 	background-position: 0% 100%;
 
 	animation: color-me-in 1s forwards;
-	animation-delay: 2.2s;
+	animation-delay: 2.9s;
   }
 
   @keyframes color-me-in {
@@ -284,17 +320,17 @@ body.page-template-page-fullsingle-split {
 	}
 	.split-list:nth-child(1){
 		animation: fadein 1.3s forwards; 
-		animation-delay: 1s;
+		animation-delay: 1.75s;
 		}
 
 	.split-list:nth-child(2){
 		animation: fadein 1.3s forwards; 
-		animation-delay: 1.15s;
+		animation-delay: 1.90s;
 		}
 
 	.split-list:nth-child(3){
 		animation: fadein 1.3s forwards; 
-		animation-delay: 1.30s;
+		animation-delay: 2.05s;
 	}
 }
 
@@ -327,17 +363,17 @@ body.page-template-page-fullsingle-split {
 
 	.social:nth-child(1){
 		animation: fadein 1.3s forwards; 
-		animation-delay: 1.6s;
+		animation-delay: 2.35s;
 	}
 
 	.social:nth-child(2){
 		animation: fadein 1.3s forwards; 
-		animation-delay: 1.75s;
+		animation-delay: 2.50s;
 		}
 
 	.social:nth-child(3){
 		animation: fadein 1.3s forwards; 
-		animation-delay: 1.90s;
+		animation-delay: 2.65s;
 	}
 }
 
