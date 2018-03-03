@@ -13,14 +13,16 @@ googleAnalytics = ""
   # Metadata for search engines and social sharing
   name = "Jonathan Nguyen"
   description = "My portfolio website."
-  shareImage = "images/background-edit-gradient.jpg"
+  shareImage = "images/background-edit-gradient-2-min.jpg"
   twitterHandle = ""
+  logosrc = "images/logo-min.png"
 
   # Favicon
   favicon = "favicon.ico"
 
   # Copyright
   copyright = "&copy;2017 Jonathan Nguyen"
+
 
   # Section - Content
   [params.content]
