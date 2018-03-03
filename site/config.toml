@@ -6,7 +6,7 @@ theme = "hugo-split-theme"
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
+googleAnalytics = "UA-115030409-1"
 
 [params]
 
@@ -15,7 +15,7 @@ googleAnalytics = ""
   description = "My portfolio website."
   shareImage = "images/background-edit-gradient-2-min.jpg"
   twitterHandle = ""
-  logosrc = "images/logo-min.png"
+  logosrc = "images/logo2.png"
 
   # Favicon
   favicon = "favicon.ico"
