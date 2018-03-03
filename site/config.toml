@@ -15,7 +15,7 @@ googleAnalytics = "UA-115030409-1"
   description = "My portfolio website."
   shareImage = "images/background-edit-gradient-2-min.jpg"
   twitterHandle = ""
-  logosrc = "images/logo2.png"
+  logosrc = "images/logo-min.png"
 
   # Favicon
   favicon = "favicon.ico"
