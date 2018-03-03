@@ -5,14 +5,9 @@ window.mobilecheck = function() {
 };
 
 window.onload = function() {
-  console.log(window.mobilecheck());
   if (window.mobilecheck()) {
     const image = document.getElementById("split-image-backup");
     image.className = "split-image-mobile";
-    // var innerDiv = document.createElement("div");
-    // innerDiv.className = "split-image-mobile";
-    // console.log(innerDiv);
-    // image.appendChild(innerDiv);
   }
 };
 

@@ -6,22 +6,11 @@
 </head>
 
 <body id="fullsingle" class="page-template-page-fullsingle-split">
-
   <div class="fs-split">
 
-    <!-- Image -->
-    {{ if .Site.Params.visual.image.enable }}
-    
-      <div class="split-image">
 
-      </div>
 
-    <!-- Video -->
-    {{ else if .Site.Params.visual.video.enable }}
-
-      {{ partial "video" . }}
-
-    {{ end }}
+      <a href="#"><img src="images/logo.png" id="logo"/></a><br/>
 
     <!-- Content Side -->
     <div class="split-content">
@@ -41,6 +30,19 @@
 
       </div>
     </div>
+        <!-- Image -->
+        {{ if .Site.Params.visual.image.enable }}
+    
+        <div class="split-image">
+  
+        </div>
+  
+      <!-- Video -->
+      {{ else if .Site.Params.visual.video.enable }}
+  
+        {{ partial "video" . }}
+  
+      {{ end }}
     <div id="split-image-backup">
 
     </div>
