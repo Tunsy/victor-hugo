@@ -63,7 +63,7 @@ googleAnalytics = "UA-115030409-1"
 
       [[params.links.list1.link]]
         text = "YOLOBOLO"
-        url = "//github.com/chriswongtv/bolo"
+        url = "//github.com/Tunsy/bolo"
 
       [[params.links.list1.link]]
         text = "More >"
