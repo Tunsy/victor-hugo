@@ -28,7 +28,7 @@ googleAnalytics = "UA-115030409-1"
   [params.content]
     name = "Jonathan Nguyen"
     tagline = "Software Engineer"
-    bio = "Hi! I'm a student studying computer science at the [University of California, Irvine](//uci.edu/). I enjoy developing applications and solving problems. Take a look at my [resume](jonathanNguyenSoftwareResume.pdf) or some of the cool stuff I've worked on!"
+    bio = "Hi! I'm a student studying computer science at the University of California, Irvine. I enjoy developing applications and solving problems. Take a look at my [resume](jonathanNguyenSoftwareResume.pdf) or some of the cool stuff I've worked on!"
 
   # Section - Visual
   [params.visual]

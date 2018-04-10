@@ -169,16 +169,25 @@ body.page-template-page-fullsingle-split {
   .split-bio p {
     color: #b6c1c9; }
   .split-bio a:not([class]) {
-    background-image: linear-gradient(#2575fc 50%, #2575fc 50%);
-    background-size: 10000px 1.1em;
-    color: #5d37b6;
-    background-repeat: no-repeat;
-    background-position: 0 1.2em;
-    background-position: -10000px 1.1em;
-    font-weight: bold; }
-    .split-bio a:not([class]):hover {
-      background-position: 0 1.1em;
-      transition: background-position 2s ease-in-out; }
+    color: #774bdf;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    overflow: hidden; }
+    .split-bio a:not([class]):after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      width: 0;
+      bottom: -1px;
+      background: linear-gradient(120deg, #774bdf 0%, #2575fc 100%);
+      height: 2px;
+      transition: width .25s ease-out; }
+    .split-bio a:not([class]):hover:after, .split-bio a:not([class]):focus:after, .split-bio a:not([class]):active:after {
+      left: 0;
+      right: auto;
+      width: 100%; }
 
 .underline--magical {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
@@ -218,12 +227,25 @@ body.page-template-page-fullsingle-split {
       font-size: 16px;
       line-height: 16px;
       margin-bottom: 12px; }
-      .split-lists .split-list ul li a {
-        color: #b6c1c9;
-        transition-duration: 0.5s; }
-        .split-lists .split-list ul li a:hover {
-          color: #5d37b6;
-          transition-duration: 0.1s; }
+      .split-lists .split-list ul li a:not([class]) {
+        color: #774bdf;
+        display: inline;
+        position: relative;
+        overflow: hidden; }
+        .split-lists .split-list ul li a:not([class]):after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          right: 0;
+          width: 0;
+          bottom: -1px;
+          background: linear-gradient(120deg, #774bdf 0%, #2575fc 100%);
+          height: 2px;
+          transition: width .25s ease-out; }
+        .split-lists .split-list ul li a:not([class]):hover:after, .split-lists .split-list ul li a:not([class]):focus:after, .split-lists .split-list ul li a:not([class]):active:after {
+          left: 0;
+          right: auto;
+          width: 100%; }
   .split-lists .split-list:nth-child(1) {
     animation: fadein 1.3s forwards;
     animation-delay: 1.75s; }
@@ -253,8 +275,8 @@ body.page-template-page-fullsingle-split {
     opacity: 0;
     transition-duration: 0.5s; }
     .social-links .social:hover {
-      color: #5d37b6;
-      border-color: #5d37b6;
+      color: #774bdf;
+      border-color: #774bdf;
       transition-duration: 0.1s; }
   .social-links .social:nth-child(1) {
     animation: fadein 1.3s forwards;

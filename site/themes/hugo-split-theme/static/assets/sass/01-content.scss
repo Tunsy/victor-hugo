@@ -18,7 +18,7 @@
 $color-background 	: rgb(3, 12, 24);
 $color-text			: #b6c1c9;
 $color-link			: #b6c1c9;
-$color-link-hover	: #5d37b6; 
+$color-link-hover	: #774bdf; 
 $color-link-underline: #2575fc;
 $color-maverick		: #e7f0f8; 
 $color-tagline		: #e7f0f8; 
@@ -269,16 +269,27 @@ body.page-template-page-fullsingle-split {
 	}
 
 	a:not([class]) {
-		background-image: linear-gradient($color-link-underline 50%, $color-link-underline 50%);
-		background-size: 10000px 1.1em;
 		color: $color-link-hover;
-		background-repeat: no-repeat;
-		background-position: 0 1.2em;
-		background-position: -10000px 1.1em;
 		font-weight: bold;
-		&:hover {
-		  background-position: 0 1.1em;
-		  transition: background-position 2s ease-in-out;
+		display: inline;
+		position: relative;
+		overflow: hidden;
+
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			right: 0;
+			width: 0;
+			bottom: -1px;
+			background: linear-gradient(120deg, $color-link-hover 0%, $color-link-underline 100%);
+			height: 2px;
+			transition: width .25s ease-out;
+		}
+		&:hover:after, &:focus:after, &:active:after {
+			left: 0;
+			right: auto;
+			width: 100%;
 		}
 	}		
 }
@@ -338,15 +349,28 @@ body.page-template-page-fullsingle-split {
 				line-height: 16px;	
 				margin-bottom: 12px;
 				
-				a {
-					color: $color-link;
-					transition-duration: 0.5s;
-
-					&:hover {
-						color: $color-link-hover;
-						transition-duration: 0.1s;
+				a:not([class]) {
+					color: $color-link-hover;
+					display: inline;
+					position: relative;
+					overflow: hidden;
+			
+					&:after {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						right: 0;
+						width: 0;
+						bottom: -1px;
+						background: linear-gradient(120deg, $color-link-hover 0%, $color-link-underline 100%);
+						height: 2px;
+						transition: width .25s ease-out;
 					}
-
+					&:hover:after, &:focus:after, &:active:after {
+						left: 0;
+						right: auto;
+						width: 100%;
+					}
 				}
 				
 			}
