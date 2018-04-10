@@ -76,15 +76,15 @@ googleAnalytics = "UA-115030409-1"
 
       [[params.links.list2.link]]
         text = "VGDC"
-        url = "#"
+        url = "//sites.google.com/view/vgdcuci/home?authuser=0"
 
       [[params.links.list2.link]]
         text = "FIRST Robotics"
-        url = "#"
+        url = "//www.fremontrobotics.com/"
 
       [[params.links.list2.link]]
         text = "Developers' Guild"
-        url = "#"
+        url = "//github.com/DevelopersGuild"
 
   # Links List #3
   [[params.links]]
@@ -92,16 +92,16 @@ googleAnalytics = "UA-115030409-1"
       heading = "Experience"
 
       [[params.links.list3.link]]
-        text = "Kelley Blue Book"
-        url = "#"
+        text = "PlayStation Now"
+        url = "//www.playstation.com/en-us/explore/playstationnow"
 
       [[params.links.list3.link]]
-        text = "Tunsy"
-        url = "#"
+        text = "Kelley Blue Book"
+        url = "//www.kbb.com"
 
       [[params.links.list3.link]]
         text = "Student Success Center"
-        url = "#"
+        url = "//www.deanza.edu/studentsuccess/wrc"
 
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.

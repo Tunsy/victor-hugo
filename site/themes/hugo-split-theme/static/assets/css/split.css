@@ -227,9 +227,14 @@ body.page-template-page-fullsingle-split {
   .split-intro h1 {
     font-weight: bold;
     font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 5px;
+    line-height: 1.2em;
+    padding-bottom: 5px;
     letter-spacing: 0.4px;
+    color: #e7f0f8;
+    margin-left: -10px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
     color: #e7f0f8; }
   .split-intro .tagline {
     color: #e7f0f8;
@@ -251,15 +256,15 @@ body.page-template-page-fullsingle-split {
   .split-bio p {
     color: #b6c1c9; }
   .split-bio a:not([class]) {
-    background-image: linear-gradient(#5d37b6 50%, #5d37b6 50%);
-    background-size: 10000px 1px;
+    background-image: linear-gradient(#2575fc 50%, #2575fc 50%);
+    background-size: 10000px 1.1em;
     color: #5d37b6;
     background-repeat: no-repeat;
-    background-position: 0 1em;
-    background-position: -10000px 1em;
+    background-position: 0 1.2em;
+    background-position: -10000px 1.1em;
     font-weight: bold; }
     .split-bio a:not([class]):hover {
-      background-position: 0 1em;
+      background-position: 0 1.1em;
       transition: background-position 2s ease-in-out; }
 
 .underline--magical {
