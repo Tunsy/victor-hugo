@@ -52,6 +52,9 @@ googleAnalytics = "UA-115030409-1"
   [[params.links]]
     [params.links.list1]
       heading = "Projects"
+      [[params.links.list1.link]]
+        text = "PokeARena"
+        url = "//devpost.com/software/citrus-hacks-2018"
 
       [[params.links.list1.link]]
         text = "Instanurse"
