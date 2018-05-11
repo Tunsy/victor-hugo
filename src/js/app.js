@@ -15,8 +15,6 @@ window.onload = function() {
 // VARIABLES
 const magicalUnderlines = Array.from(document.querySelectorAll(".underline--magical"));
 
-const gradientAPI = "https://gist.githubusercontent.com/wking-io/3e116c0e5675c8bcad8b5a6dc6ca5344/raw/4e783ce3ad0bcd98811c6531e40256b8feeb8fc8/gradient.json";
-
 // HELPER FUNCTIONS
 
 // 1. Get random number in range. Used to get random index from array.
