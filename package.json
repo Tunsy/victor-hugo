@@ -8,7 +8,7 @@
     "hugo": "gulp hugo",
     "build": "gulp build",
     "build-preview": "gulp build-preview",
-    "start": "gulp server",
+    "start": "node-sass --watch site/themes/hugo-split-theme/static/assets/sass -o site/themes/hugo-split-theme/static/assets/css | gulp server",
     "lint": "eslint src"
   },
   "author": "",
