@@ -28,7 +28,7 @@ googleAnalytics = "UA-115030409-1"
   [params.content]
     name = "Jonathan Nguyen"
     tagline = "Software Engineer"
-    bio = "Hi! I'm a recent graduate from UC Irvine and a Software Engineer Intern at [Sony PlayStation](//www.playstation.com/en-us/explore/playstation-now/). I enjoy developing applications and solving problems. Please, take a look at my [resume](jonathanNguyenSoftwareResume.pdf) or view my complete profile on [LinkedIn!](//www.linkedin.com/in/jonthnngyn)"
+    bio = "Hi! I'm a recent graduate from UC Irvine and Software Engineering Intern at [Sony PlayStation](//www.playstation.com/en-us/explore/playstation-now/). I enjoy developing applications and solving problems. Please, take a look at my [resume](jonathanNguyenSoftwareResume.pdf) or view my complete profile on [LinkedIn!](//www.linkedin.com/in/jonthnngyn)"
 
   # Section - Visual
   [params.visual]
