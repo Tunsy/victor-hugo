@@ -28,7 +28,7 @@ googleAnalytics = "UA-115030409-1"
   [params.content]
     name = "Jonathan Nguyen"
     tagline = "Software Engineer"
-    bio = "Hi! I'm a student studying computer science at the University of California, Irvine. I enjoy developing applications and solving problems. Take a look at my [resume](jonathanNguyenSoftwareResume.pdf) or some of the cool stuff I've worked on!"
+    bio = "Hi! I'm a recent graduate from UC Irvine and a Software Engineer Intern at [Sony PlayStation](//www.playstation.com/en-us/explore/playstation-now/). I enjoy developing applications and solving problems. Please, take a look at my [resume](jonathanNguyenSoftwareResume.pdf) or view my complete profile on [LinkedIn!](//www.linkedin.com/in/jonthnngyn)"
 
   # Section - Visual
   [params.visual]
@@ -49,62 +49,64 @@ googleAnalytics = "UA-115030409-1"
   # Links
   #
   # Links List #1
-  [[params.links]]
-    [params.links.list1]
-      heading = "Projects"
-      [[params.links.list1.link]]
-        text = "PokeARena"
-        url = "//devpost.com/software/citrus-hacks-2018"
+    [[params.links]]
+      [params.links.list1]
+        heading = "Experience"
 
-      [[params.links.list1.link]]
-        text = "Instanurse"
-        url = "//devpost.com/software/instanurse"
+        [[params.links.list1.link]]
+          text = "Sony PlayStation"
+          url = "//www.playstation.com/en-us/explore/playstation-now/"
 
-      [[params.links.list1.link]]
-        text = "VRoom"
-        url = "//devpost.com/software/vroom-ofcbn0"
+        [[params.links.list1.link]]
+          text = "Cox Automotive - Kelley Blue Book"
+          url = "//www.kbb.com"
 
-      [[params.links.list1.link]]
-        text = "YOLOBOLO"
-        url = "//github.com/Tunsy/bolo"
-
-      [[params.links.list1.link]]
-        text = "More >"
-        url = "//www.github.com/Tunsy"
+        [[params.links.list1.link]]
+          text = "Student Success Center"
+          url = "//www.deanza.edu/studentsuccess/wrc"
 
   # Links List #2
   [[params.links]]
     [params.links.list2]
-      heading = "Leadership"
+      heading = "Projects"
+      [[params.links.list2.link]]
+        text = "PokeARena"
+        url = "//devpost.com/software/citrus-hacks-2018"
 
       [[params.links.list2.link]]
-        text = "VGDC"
-        url = "//sites.google.com/view/vgdcuci/home?authuser=0"
+        text = "Instanurse"
+        url = "//devpost.com/software/instanurse"
 
       [[params.links.list2.link]]
-        text = "FIRST Robotics"
-        url = "//www.fremontrobotics.com/"
+        text = "VRoom"
+        url = "//devpost.com/software/vroom-ofcbn0"
 
       [[params.links.list2.link]]
-        text = "Developers' Guild"
-        url = "//github.com/DevelopersGuild"
+        text = "Food Journaling Research"
+        url = "multimodal-food-journaling.pdf"
+
+      [[params.links.list2.link]]
+        text = "More >"
+        url = "//www.github.com/Tunsy"
 
   # Links List #3
   [[params.links]]
     [params.links.list3]
-      heading = "Experience"
+      heading = "Leadership"
 
       [[params.links.list3.link]]
-        text = "Kelley Blue Book"
-        url = "//www.kbb.com"
+        text = "VGDC"
+        url = "//sites.google.com/view/vgdcuci/home?authuser=0"
 
       [[params.links.list3.link]]
-        text = "Student Success Center"
-        url = "//www.deanza.edu/studentsuccess/wrc"
+        text = "FIRST Robotics"
+        url = "//www.fremontrobotics.com/"
 
       [[params.links.list3.link]]
-        text = "Tunsy"
-        url = "#"
+        text = "Developers' Guild"
+        url = "//github.com/DevelopersGuild"
+
+ 
 
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.
