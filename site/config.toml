@@ -28,7 +28,7 @@ googleAnalytics = "UA-115030409-1"
   [params.content]
     name = "Jonathan Nguyen"
     tagline = "Software Engineer at IBM"
-    bio = "👋 Hi! I’m a just a guy who has fun learning and making computers talk to other computers. Feel free to take a look at my [resume](jonathanNguyenSoftwareResume.pdf) or view my complete profile on [LinkedIn!](//www.linkedin.com/in/jonthnngyn)"
+    bio = "👋 Hi! I’m just someone who has fun learning and making computers talk to other computers. Feel free to take a look at my [resume](jonathanNguyenSoftwareResume.pdf) or view my complete profile on [LinkedIn!](//www.linkedin.com/in/jonthnngyn)"
 
   # Section - Visual
   [params.visual]
