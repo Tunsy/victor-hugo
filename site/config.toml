@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "https://example.org/"
+baseURL = "https://jonathanngguyen.me"
 languageCode = "en-US"
 title = "Jonathan Nguyen"
 theme = "hugo-split-theme"
@@ -12,7 +12,7 @@ googleAnalytics = "UA-115030409-1"
 
   # Metadata for search engines and social sharing
   name = "Jonathan Nguyen"
-  description = "My portfolio website."
+  description = "Jonathan Nguyens portfolio website."
   shareImage = "images/background-edit-gradient-2-min.jpg"
   twitterHandle = ""
   logosrc = "images/logo-min.png"
@@ -21,14 +21,14 @@ googleAnalytics = "UA-115030409-1"
   favicon = "favicon.ico"
 
   # Copyright
-  copyright = "&copy;2017 Jonathan Nguyen"
+  copyright = "&copy;2020 Jonathan Nguyen"
 
 
   # Section - Content
   [params.content]
     name = "Jonathan Nguyen"
-    tagline = "Software Engineer"
-    bio = "Hi! I'm a recent graduate from the University of California, Irvine and Software Engineering Intern at [Sony PlayStation](//www.playstation.com/en-us/explore/playstation-now/). I enjoy developing applications and solving problems. Please, take a look at my [resume](jonathanNguyenSoftwareResume.pdf) or view my complete profile on [LinkedIn!](//www.linkedin.com/in/jonthnngyn)"
+    tagline = "Software Engineer at IBM"
+    bio = "👋 Hi! I’m a just a guy who has fun learning and making computers talk to other computers. Feel free to take a look at my [resume](jonathanNguyenSoftwareResume.pdf) or view my complete profile on [LinkedIn!](//www.linkedin.com/in/jonthnngyn)"
 
   # Section - Visual
   [params.visual]
@@ -54,16 +54,16 @@ googleAnalytics = "UA-115030409-1"
         heading = "Experience"
 
         [[params.links.list1.link]]
+          text = "IBM"
+          url = "//www.ibm.com/products/db2-data-management-console"
+
+        [[params.links.list1.link]]
           text = "Sony PlayStation"
           url = "//www.playstation.com/en-us/explore/playstation-now/"
 
         [[params.links.list1.link]]
           text = "Cox Automotive - Kelley Blue Book"
           url = "//www.kbb.com"
-
-        [[params.links.list1.link]]
-          text = "Student Success Center"
-          url = "//www.deanza.edu/studentsuccess/wrc"
 
   # Links List #2
   [[params.links]]
@@ -82,8 +82,8 @@ googleAnalytics = "UA-115030409-1"
         url = "//devpost.com/software/vroom-ofcbn0"
 
       [[params.links.list2.link]]
-        text = "Food Journaling Research"
-        url = "multimodal-food-journaling.pdf"
+        text = "ML Food Journal Research"
+        url = "//dl.acm.org/doi/abs/10.1145/3264996.3265000"
 
       [[params.links.list2.link]]
         text = "More >"
